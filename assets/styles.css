@@ -97,7 +97,7 @@ main {
     width: 100%;
 }
 
-#hero {
+#cat {
     margin-top: 65px;
     padding: 70px 0;
     max-width: 1200px;
@@ -106,14 +106,14 @@ main {
     align-items: center;
 }
 
-.hero-info {
+.cat-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;
 }
 
-.hero-info h1 {
+.cat-info h1 {
     font-size: 48px;
     width: 80%;
     min-width: 500px;
@@ -121,8 +121,102 @@ main {
     color: var(--text-white);
 }
 
-.hero-info p {
+.cat-info p {
     font-size: 14px;
     width: 70%;
     color: var(--text-gray);
+}
+
+.cat-info p > span {
+    font-weight: 800;
+}
+
+.cat-info a {
+    color: var(--text-white);
+    background-color: var(--primary);
+    width: 120px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cat-card {
+    width: 300px;
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cat-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cat-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.cat-card-top h3 {
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-card-top span {
+    background-color: var(--primary);
+    text-align: center;
+    width: 50px;
+    padding: 3px 0;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.cat-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cat-card-creator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cat-card-creator img {
+    height: 50px;
+    width: 50px;
+}
+
+.creator-info p:first-child,
+.cat-card-price p {
+    color: var(--text-gray);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.cat-card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cat-card-price span,
+.creator-info p:last-child {
+    font-size: 14px;
+}
+
+.cat-card-price span {
+    font-weight: 700;
 }
