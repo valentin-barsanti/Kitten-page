@@ -220,3 +220,55 @@ main {
 .cat-card-price span {
     font-weight: 700;
 }
+
+#info {
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#info h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card {
+    width: 300px;
+    height: 290px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--secondary);
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.info-card img {
+    width: 80px;
+    filter: brightness(300);
+}
+
+.info-card h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info-card p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-gray);
+}
